@@ -1,0 +1,54 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr);
+    grid-template-rows: 0.5fr 1.5fr 1fr;
+    gap: 50px 50px;
+    grid-template-areas:
+      "Header Header"
+      "Image P"
+      "H2P Image2";
+      place-items: center;
+      background-color: #222829;
+      color: white;
+      margin: auto, 0;
+      padding: 20px;
+      
+      
+  }
+  .Header { grid-area: Header; 
+            color: #86C232;
+            text-decoration:underline;
+            border-style: solid;
+            padding: 50px;
+            background-origin: padding-box;}
+ 
+  .P { grid-area: P; 
+        font-size: 20px;}
+  .H2P { grid-area: H2P;
+          font-size: 20px; }
+  .Image2 { grid-area: Image2; }
+
+  body {
+    margin: 50px;
+    font-family: 'Shadows Into Light', cursive;
+    
+    
+
+  }
+  h2{
+    font-size: 50px;
+    color: #86C232;
+    
+  }
+  h1{
+    font-size: 65px;
+    color: #86C232;
+  }
+  img{
+      max-width: 100%;
+      height: auto;
+      border-radius: 5%;
+  }
+ 
+ 
+
